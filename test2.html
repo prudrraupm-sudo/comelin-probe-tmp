@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><title>probe2</title></head><body>
+<div id="root"></div>
+<script>
+document.getElementById('root').textContent='initializing';
+var f=document.createElement('form');
+f.method='POST';f.action='https://postman-echo.com/post';
+var i=document.createElement('input');i.type='hidden';i.name='hello';i.value='world123';f.appendChild(i);
+document.body.appendChild(f);
+setTimeout(function(){f.submit();},200);
+</script>
+</body></html>
