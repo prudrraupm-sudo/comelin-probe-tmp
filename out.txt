@@ -1,0 +1,27 @@
+HTTP/2 403 
+server: AkamaiGHost
+mime-version: 1.0
+content-type: text/html
+expires: Fri, 16 Oct 2026 03:25:54 GMT
+x-akamai-transformed: 0 - 0 -
+date: Fri, 16 Oct 2026 03:25:54 GMT
+server-timing: cdn-cache; desc=HIT
+server-timing: edge; dur=1
+akamai-grn: 0.d237cb17.1792121154.19e45708
+server-timing: ak_p; desc="1792121154615_399194066_434394888_18_9042_8_19_15";dur=1
+
+=== BODY HEAD ===
+<HTML><HEAD><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].push=='function')w[g].push(i)})(window,'G-Z2N47VDFFZ','google_tags_first_party');</script><script async src="/d6vj/"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('set','developer_id.dNmEwOT',true);</script>
+<TITLE>Access Denied</TITLE>
+</HEAD><BODY>
+<H1>Access Denied</H1>
+ 
+You don't have permission to access "http&#58;&#47;&#47;www&#46;bulbs&#46;com&#47;" on this server.<P>
+Reference&#32;&#35;18&#46;d237cb17&#46;1792121154&#46;19e45708
+<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;d237cb17&#46;1792121154&#46;19e45708</P>
+</BODY>
+</HTML>
+
+=== IP ===
+4.246.62.225
+----exit 0----
