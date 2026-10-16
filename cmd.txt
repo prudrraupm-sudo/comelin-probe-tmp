@@ -1,0 +1,7 @@
+curl -s -m 60 -D - -o /tmp/b.html -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" --compressed "https://www.bulbs.com/"
+echo "=== BODY HEAD ==="
+head -c 3000 /tmp/b.html
+echo
+echo "=== IP ==="
+curl -s -m 20 https://api.ipify.org
+echo
