@@ -1,0 +1,23 @@
+name: probe
+on:
+  push:
+    paths:
+      - 'cmd.txt'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: exec
+        run: |
+          set +e
+          bash cmd.txt > out.txt 2>&1
+          echo "----exit $?----" >> out.txt
+          git config user.email bot@example.com
+          git config user.name bot
+          git add out.txt
+          git commit -m "out $(date -u +%s)" || true
+          git push || true
